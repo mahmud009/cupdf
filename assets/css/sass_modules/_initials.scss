@@ -1,0 +1,49 @@
+// Global font fix
+html {
+  scroll-behavior: smooth;
+  font-size: 80%;
+
+  @include md {
+    font-size: 90%;
+  }
+
+  @include xxxl {
+    font-size: 100%;
+  }
+}
+
+// Global style fix
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: map-get($fonts, "primary");
+}
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-family: map-get($fonts, "primary");
+}
+
+p,
+a,
+li {
+  font-family: map-get($fonts, "primary");
+}
+
+a {
+  text-decoration: none !important;
+}

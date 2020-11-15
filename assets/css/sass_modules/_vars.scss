@@ -1,0 +1,21 @@
+//Predefined colors
+$theme-colors: (
+  "green": #21ba88,
+  "blue": #36a3f7,
+  "purple": #716aca,
+  "white": #ffffff,
+  "page-bg": #fafbff,
+  "nav-white": #fafbff,
+  "nav-font": #6c7392,
+  "nav-font-green": #3ec398,
+  "font-black": #32325d,
+  "font-gray": #646470,
+  "font-gray-light": #b4b4c0,
+);
+
+$fonts: (
+  "primary": #{"Poppins",
+  sans-serif},
+);
+
+$transition: all 0.3s ease;

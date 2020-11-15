@@ -1,0 +1,122 @@
+//Sass Mixins
+
+// Responsive breakpoints
+@mixin sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: 1520px) {
+    @content;
+  }
+}
+
+@mixin xxxl {
+  @media (min-width: 1750px) {
+    @content;
+  }
+}
+
+// Re-usable style mixins
+@mixin section-gap {
+  padding: $section-gap;
+}
+
+@mixin section-gap-bottom {
+  padding: $section-gap-bottom;
+}
+
+@mixin section-gap-top {
+  padding: $section-gap-top;
+}
+
+@mixin transition {
+  transition: all 0.3s ease;
+}
+
+@mixin section-border-thick {
+  border-top: 2px;
+  border-bottom: 2px;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-color: map-get($theme-colors, "red");
+}
+
+@mixin section-border-top-thick {
+  border-top: 2px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-color: map-get($theme-colors, "red");
+}
+
+@mixin section-border-bottom-thick {
+  border-top: 0;
+  border-bottom: 2px;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-color: map-get($theme-colors, "red");
+}
+
+@mixin section-border-thin {
+  border-top: 1px;
+  border-bottom: 1px;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-color: map-get($theme-colors, "red");
+}
+
+@mixin text-size($size) {
+  @if $size == "large" {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  @if $size == "semi-large" {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+
+  @if $size == "medium" {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+
+  @if $size == "small" {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    font-weight: 500;
+  }
+
+  @if $size == "micro" {
+    font-size: 0.7rem;
+    line-height: 1.3;
+    font-weight: 500;
+  }
+}

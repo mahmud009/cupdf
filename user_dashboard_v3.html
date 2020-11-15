@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc doc dashboard v3</title>
+
+    <!--Calling css plugins and css cdn-->
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/fontawesome/css/all.min.css"
+    />
+
+    <!--Calling google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--Calling custom stylesheets-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    
+
+    <!--Header section with nav-->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between cu-nav">
+          <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+          
+          <button id="cu-nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+
+        
+          <div class="cu-nav-wrapper" id="main-nav">
+            <button id="nav-close"><i class="far fa-times-circle"></i></button>
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">More</a>
+              </li>
+
+              <!--Nav icons-->
+              <li class="nav-item cu-nav-icons-wrapper">
+                <ul class="cu-nav-icons">
+                  <li class="nav-item">
+                    <a class="nav-link cu-nav-icon" href="#">
+                      <i class="far fa-bell"></i>
+                      <span class="badge badge-pill cu-badge">66</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link cu-nav-icon" href="#">
+                      <i class="far fa-comment-dots"></i>
+                      <span class="badge badge-pill cu-badge">66</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--Nav icons end-->
+
+
+              <!--Nav profile id-->
+              <li class="nav-item cu-nav-user">
+                <span>Hi, Richard</span>
+                <a class="nav-link" href="#"><img src="./assets/images/nav_user_avatar.png" alt=""></a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+
+      <!--page title section-->
+      <section class="cu-page-title-sec">
+        <div class="container">
+          <div class="cu-wrapper">
+            <h1 class="cu-page-title">USER DASHBOARD</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="cu-main-content">
+
+        <div class="container">
+
+          <!-- User profile card-->
+          <div class="cu-user-card">
+            <div class="cu-wrapper">
+              <div class="cu-user-action-btns">
+                <button class="cu-action-btn"><i class="fas fa-pen"></i>Edit profile</button>
+                <button class="cu-action-btn active">Chat</button>
+                <button class="cu-action-btn">Follow</button>
+              </div>
+
+              <div class="cu-user-img">
+                <img src="./assets/images/user_img_large.png" alt="">
+              </div>
+              <div class="cu-user-info">
+
+                <div class="cu-user-title">
+                  <h3 class="cu-user-name">Richard Branson</h3>
+                </div>
+                <div class="cu-user-tag">
+                  <a href="#">#richard_br</a>
+                </div>
+
+                <div class="cu-user-meta">
+
+                  <div class="cu-single-meta">
+                    <span class="cu-meta-number">1022</span>
+                    <span class="cu-meta-title">Posts</span>
+                  </div>
+
+                  <div class="cu-single-meta">
+                    <span class="cu-meta-number">25.1k</span>
+                    <span class="cu-meta-title">Followers</span>
+                  </div>
+
+                  <div class="cu-single-meta">
+                    <span class="cu-meta-number">358</span>
+                    <span class="cu-meta-title">Following</span>
+                  </div>
+
+                </div>
+
+                <div class="cu-user-desc">
+                  <p>
+                    Founder, Virgin Galactic. Mailbox: richard_br@gmail.com. I distinguish three main text objectives could be merely to inform people. A second could be persuade people.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- User profile card end-->
+
+
+          <!--Search bar section starts-->
+          <div class="cu-search-section">
+            <div class="cu-search-title">
+              <h3 class="cu-search-heading">Cupdf is a huge source of documents for you to explore</h3>
+            </div>
+
+            <div class="cu-search-bar-wrapper">
+              <form class="cu-search-bar" action="">
+                <input type="text" placeholder="Looking for something...">
+                <button class="cu-search-btn">SEARCH</button>
+              </form>
+            </div>
+          </div>
+          <!--Search bar section ends-->
+
+
+          <!--Top documents section starts-->
+          <div class="cu-top-doc-card">
+
+            <div class="cu-card-title">
+              <h3 class="cu-card-heading">
+                Top Documents
+              </h3>
+            </div>
+
+            <div class="cu-card-cnt-wrapper">
+
+
+              <!--Single post-->
+              <a href="#" class="cu-doc-single-post col-12 col-lg-6">
+                <div class="cu-single-title">
+                  <h2 class="cu-single-heading">
+                    2nd
+                  </h2>
+                </div>
+                <div class="cu-single-img">
+                  <img src="./assets/images/top_doc_2.png" alt="">
+                  <div class="cu-single-post-meta">
+                    <div class="cu-single-meta">
+                      <span class="cu-meta-text">103 views</span>
+                    </div>
+                    <div class="cu-single-meta">
+                      <span class="cu-meta-text">25 downloads</span>
+                    </div>
+                    <div class="cu-single-meta">
+                      <span class="cu-meta-text">33 shares</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cu-single-excerpt">
+                  Web Design Portfolio tnmc PORTFOLIO WEB DESIGN DESIGN. PORTFOLIO WEB DESIGN
+                </div>
+              </a>
+
+              <!--Single post-->
+              <a href="#" class="cu-doc-single-post col-12 col-lg-6">
+                <div class="cu-single-title">
+                  <h2 class="cu-single-heading">
+                    3rd
+                  </h2>
+                </div>
+                <div class="cu-single-img">
+                  <img src="./assets/images/top_doc_3.png" alt="">
+                  <div class="cu-single-post-meta">
+                    <div class="cu-single-meta">
+                      <span class="cu-meta-text">103 views</span>
+                    </div>
+                    <div class="cu-single-meta">
+                      <span class="cu-meta-text">25 downloads</span>
+                    </div>
+                    <div class="cu-single-meta">
+                      <span class="cu-meta-text">33 shares</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cu-single-excerpt">
+                  Web Design Portfolio tnmc PORTFOLIO WEB DESIGN DESIGN. PORTFOLIO WEB DESIGN
+                </div>
+              </a>
+
+              <!--Single post-->
+              <a href="#" class="cu-doc-single-post col-12 col-lg-6">
+                <div class="cu-single-title">
+                  <h2 class="cu-single-heading">
+                    1st
+                  </h2>
+                </div>
+                <div class="cu-single-img">
+                  <img src="./assets/images/top_doc_1.png" alt="">
+                  <div class="cu-single-post-meta">
+                    <div class="cu-single-meta">
+                      <span class="cu-meta-text">103 views</span>
+                    </div>
+                    <div class="cu-single-meta">
+                      <span class="cu-meta-text">25 downloads</span>
+                    </div>
+                    <div class="cu-single-meta">
+                      <span class="cu-meta-text">33 shares</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cu-single-excerpt">
+                  Web Design Portfolio tnmc PORTFOLIO WEB DESIGN DESIGN. PORTFOLIO WEB DESIGN
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+          <!--Top documents section ends-->
+
+
+
+          <!--All activities section starts-->
+          <div class="cu-top-doc-card cu-all-act-sec">
+
+            <div class="cu-card-title">
+              <h3 class="cu-card-heading">
+                All Activities
+              </h3>
+
+              <div class="cu-act-filter">
+
+                <ul>
+                  <li class="active"><a href="#">Today</a></li>
+                  <li><a href="#">Week</a></li>
+                  <li><a href="#">Month</a></li>
+                  <li>
+                    <select name="" id="">
+                      <option value="category">Category</option>
+                      <option value="category">Category</option>
+                      <option value="category">Category</option>
+                      <option value="category">Category</option>
+                    </select>  
+                  </li>
+                </ul>
+
+
+              </div>
+            </div>
+
+            <div class="cu-card-cnt-wrapper">
+
+              <div class="row">
+                
+                <!--Single item-->
+                <div class="cu-single-act" href="#">
+                  <div class="cu-act-img">
+                    <img src="./assets/images/activity_1.png" alt="">
+                  </div>
+                  <div class="cu-act-info">
+                    <h4 class="cu-act-title">Great Logo Design</h4>
+                    <p>Category : <a href="#">Design</a></p>
+                    <p>Released : Apr 19, 2018</p>
+                  </div>
+                </div>
+
+                <!--Single item-->
+                <div class="cu-single-act" href="#">
+                  <div class="cu-act-img">
+                    <img src="./assets/images/activity_2.png" alt="">
+                  </div>
+                  <div class="cu-act-info">
+                    <h4 class="cu-act-title">Great Logo Design</h4>
+                    <p>Category : <a href="#">Design</a></p>
+                    <p>Released : Apr 19, 2018</p>
+                  </div>
+                </div>
+
+                <!--Single item-->
+                <div class="cu-single-act" href="#">
+                  <div class="cu-act-img">
+                    <img src="./assets/images/activity_3.png" alt="">
+                  </div>
+                  <div class="cu-act-info">
+                    <h4 class="cu-act-title">Great Logo Design</h4>
+                    <p>Category : <a href="#">Design</a></p>
+                    <p>Released : Apr 19, 2018</p>
+                  </div>
+                </div>
+
+                <!--Single item-->
+                <div class="cu-single-act" href="#">
+                  <div class="cu-act-img">
+                    <img src="./assets/images/activity_2.png" alt="">
+                  </div>
+                  <div class="cu-act-info">
+                    <h4 class="cu-act-title">Great Logo Design</h4>
+                    <p>Category : <a href="#">Design</a></p>
+                    <p>Released : Apr 19, 2018</p>
+                  </div>
+                
+                </div>
+              </div>
+
+              <div class="row">
+                
+                <!--Single item-->
+                <div class="cu-single-act" href="#">
+                  <div class="cu-act-img">
+                    <img src="./assets/images/activity_1.png" alt="">
+                  </div>
+                  <div class="cu-act-info">
+                    <h4 class="cu-act-title">Great Logo Design</h4>
+                    <p>Category : <a href="#">Design</a></p>
+                    <p>Released : Apr 19, 2018</p>
+                  </div>
+                </div>
+
+                <!--Single item-->
+                <div class="cu-single-act" href="#">
+                  <div class="cu-act-img">
+                    <img src="./assets/images/activity_2.png" alt="">
+                  </div>
+                  <div class="cu-act-info">
+                    <h4 class="cu-act-title">Great Logo Design</h4>
+                    <p>Category : <a href="#">Design</a></p>
+                    <p>Released : Apr 19, 2018</p>
+                  </div>
+                </div>
+
+                <!--Single item-->
+                <div class="cu-single-act" href="#">
+                  <div class="cu-act-img">
+                    <img src="./assets/images/activity_3.png" alt="">
+                  </div>
+                  <div class="cu-act-info">
+                    <h4 class="cu-act-title">Great Logo Design</h4>
+                    <p>Category : <a href="#">Design</a></p>
+                    <p>Released : Apr 19, 2018</p>
+                  </div>
+                </div>
+
+                <!--Single item-->
+                <div class="cu-single-act" href="#">
+                  <div class="cu-act-img">
+                    <img src="./assets/images/activity_2.png" alt="">
+                  </div>
+                  <div class="cu-act-info">
+                    <h4 class="cu-act-title">Great Logo Design</h4>
+                    <p>Category : <a href="#">Design</a></p>
+                    <p>Released : Apr 19, 2018</p>
+                  </div>
+                
+                </div>
+              </div>
+
+              <div class="row">
+                
+                <!--Single item-->
+                <div class="cu-single-act" href="#">
+                  <div class="cu-act-img">
+                    <img src="./assets/images/activity_1.png" alt="">
+                  </div>
+                  <div class="cu-act-info">
+                    <h4 class="cu-act-title">Great Logo Design</h4>
+                    <p>Category : <a href="#">Design</a></p>
+                    <p>Released : Apr 19, 2018</p>
+                  </div>
+                </div>
+
+                <!--Single item-->
+                <div class="cu-single-act" href="#">
+                  <div class="cu-act-img">
+                    <img src="./assets/images/activity_2.png" alt="">
+                  </div>
+                  <div class="cu-act-info">
+                    <h4 class="cu-act-title">Great Logo Design</h4>
+                    <p>Category : <a href="#">Design</a></p>
+                    <p>Released : Apr 19, 2018</p>
+                  </div>
+                </div>
+
+                <!--Single item-->
+                <div class="cu-single-act" href="#">
+                  <div class="cu-act-img">
+                    <img src="./assets/images/activity_3.png" alt="">
+                  </div>
+                  <div class="cu-act-info">
+                    <h4 class="cu-act-title">Great Logo Design</h4>
+                    <p>Category : <a href="#">Design</a></p>
+                    <p>Released : Apr 19, 2018</p>
+                  </div>
+                </div>
+
+                <!--Single item-->
+                <div class="cu-single-act" href="#">
+                  <div class="cu-act-img">
+                    <img src="./assets/images/activity_2.png" alt="">
+                  </div>
+                  <div class="cu-act-info">
+                    <h4 class="cu-act-title">Great Logo Design</h4>
+                    <p>Category : <a href="#">Design</a></p>
+                    <p>Released : Apr 19, 2018</p>
+                  </div>
+                
+                </div>
+              </div>
+                
+            </div>
+
+            <!--Pagination section starts-->
+            <div class="cu-act-pagination">
+
+              <ul>
+                <li><a class="cu-arrow-btn" href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                <li><a class="cu-arrow-btn" href="#"><i class="fas fa-angle-left"></i></a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">...</a></li>
+                <li><a class="cu-arrow-btn" href="#"><i class="fas fa-angle-right"></i></a></li>
+                <li><a class="cu-arrow-btn" href="#"><i class="fas fa-angle-double-right"></i></a></li>
+              </ul>
+            </div>
+            <!--Pagination section ends-->
+          </div>
+          <!--All activities section ends-->
+
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+
+      <div class="container">
+
+        <div class="cu-ftr-wrapper row">
+
+          <div class="cu-ftr-col col-12 col-md-3 cu-ftr-copy">
+            <ul>
+              <li><a href="#"><i class="fas fa-map-marker-alt"></i> United States</a></li>
+              <li><a href="#"><i class="fas fa-globe-americas"></i> English</a></li>
+              <li>2019 © CUPDF</li>
+            </ul>
+          </div>
+
+          <div class="cu-ftr-col col-12 col-md-3">
+            <h5 class="cu-ftr-title">Quick Links</h5>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Custom Pages</a></li>
+            </ul>
+          </div>
+
+          <div class="cu-ftr-col col-12 col-md-3">
+            <h5 class="cu-ftr-title">Company</h5>
+            <ul>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Settings</a></li>
+            </ul>
+          </div>
+
+          <div class="cu-ftr-col col-12 col-md-3">
+            <h5 class="cu-ftr-title">Social Network</h5>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twittter</a></li>
+              <li><a href="#">Google +</a></li>
+            </ul>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </footer>
+
+
+    <!--Calling js plugins and js cdns-->
+    <script src="./assets/plugins/jQuery/jquery.min.js"></script>
+    <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/plugins/match_height/jquery-match-height.min.js"></script>
+    
+
+    <!--Calling custom javascript -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
